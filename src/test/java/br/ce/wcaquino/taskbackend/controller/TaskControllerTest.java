@@ -57,7 +57,7 @@ public class TaskControllerTest {
     public void naoDeveSalvarTarefaComDataPassada() {
         Task todo = new Task();
         todo.setTask("Descricao");
-        todo.setDueDate(LocalDate.of(2010, 1, 1));
+        todo.setDueDate(LocalDate.of(2010, 1, 1))
         try {
             controller.save(todo);
             Assert.fail("ValidationException esperada.");
